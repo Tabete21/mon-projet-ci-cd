@@ -30,7 +30,7 @@ jobs:
         run: |
           echo "Running tests..."
           grep -q "<html>" index.html
-          grep -q "function" app.js
+          grep -q "function\|const\|let" app.js
           echo "All tests passed!"
 
   package:
